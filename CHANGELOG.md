@@ -5,3 +5,4 @@
 * Create instance via "fast add" form. Fixes UIPCIR-1.
 * Create holdings record via "fast add" form. Refs UIPCIR-2.
 * Create item record via "fast add" form. Refs UIPCIR-3.
+* Provide fast-add permission set. Refs UIPCIR-6.
