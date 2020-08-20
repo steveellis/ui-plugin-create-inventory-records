@@ -52,5 +52,6 @@
     "circulationNotes.name": "ملاحظة",
     "circulationNotes.staffOnly": "الموظفين فقط",
     "circulationNotes.checkInNote": "ملاحظة الرد",
-    "circulationNotes.checkOutNote": "ملاحظة الإعارة"
+    "circulationNotes.checkOutNote": "ملاحظة الإعارة",
+    "selectInstanceStatus": "اختر حالة الوعاء"
 }
