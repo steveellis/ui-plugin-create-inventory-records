@@ -151,5 +151,5 @@ CreateRecordsForm.propTypes = {
 
 export default stripesFinalForm({
   validate,
-  navigationCheck: false,
+  navigationCheck: true,
 })(CreateRecordsForm);
