@@ -69,7 +69,7 @@ const CreateRecordsForm = ({
     setIsModalOpen(false);
   };
 
-  const ConfirmClose = () => {
+  const confirmClose = () => {
     if (!pristine) {
       setIsModalOpen(true);
     } else {
@@ -85,7 +85,7 @@ const CreateRecordsForm = ({
     >
       <Pane
         dismissible
-        onClose={ConfirmClose}
+        onClose={confirmClose}
         paneTitle={<FormattedMessage id="ui-plugin-create-inventory-records.fastAddLabel" />}
         defaultWidth="fill"
         footer={
@@ -94,7 +94,7 @@ const CreateRecordsForm = ({
               <Button
                 id="cancel"
                 buttonStyle="default mega"
-                onClick={ConfirmClose}
+                onClick={confirmClose}
               >
                 <FormattedMessage id="ui-plugin-create-inventory-records.cancel" />
               </Button>
