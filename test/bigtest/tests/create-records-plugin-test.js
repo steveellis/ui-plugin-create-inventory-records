@@ -63,13 +63,33 @@ describe('CreateInventoryRecords', () => {
       });
     });
 
-    describe('click cancel', () => {
+    describe('input partial data, then click cancel', () => {
       beforeEach(async () => {
+        await plugin.form.fillTitleField('title');
         await plugin.form.clickCancel();
       });
 
-      it('closes plugin', () => {
-        expect(plugin.form.isPresent).to.be.false;
+      it('opens the cancel confirm modal', () => {
+        expect(plugin.cancelModal.isPresent).to.be.true;
+      });
+
+      describe('click confirm', () => {
+        beforeEach(async () => {
+          await plugin.cancelModal.clickConfirm();
+        });
+        it('clicking confirm closes modal without closing form', () => {
+          expect(plugin.cancelModal.isPresent).to.be.false;
+          expect(plugin.form.isPresent).to.be.true;
+        });
+      });
+      describe('click cancel', () => {
+        beforeEach(async () => {
+          await plugin.cancelModal.clickCancel();
+        });
+        it('clicking cancel closes modal and form', () => {
+          expect(plugin.cancelModal.isPresent).to.be.false;
+          expect(plugin.form.isPresent).to.be.false;
+        });
       });
     });
   });

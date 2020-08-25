@@ -37,6 +37,11 @@ import CalloutInteractor from '@folio/stripes-components/lib/Callout/tests/inter
   }
 }
 
+@interactor class CancelConfirmModalInteractor {
+  clickConfirm = clickable('#clickable-cancel-editing-confirmation-confirm');
+  clickCancel = clickable('#clickable-cancel-editing-confirmation-cancel');
+}
+
 @interactor class FormInteractor {
   contributors = new ContributorsInteractor();
   circulationNotes = new CirculationNotesInteractor();
@@ -63,6 +68,7 @@ import CalloutInteractor from '@folio/stripes-components/lib/Callout/tests/inter
 
   callout = new CalloutInteractor();
   locationLookup = new LocationLookupInteractor();
+  cancelModal = new CancelConfirmModalInteractor('#cancel-editing-confirmation');
 }
 
 export default CreateRecordsWrapperInteractor;
