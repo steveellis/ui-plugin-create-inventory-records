@@ -59,19 +59,19 @@ const CreateRecordsForm = ({
   pristine,
   submitting,
 }) => {
-  const [openModal, toggleModal] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const exitEdit = () => {
     onClose();
   };
 
   const closeModal = () => {
-    toggleModal(false);
+    setIsModalOpen(false);
   };
 
   const ConfirmClose = () => {
     if (!pristine) {
-      toggleModal(true);
+      setIsModalOpen(true);
     } else {
       exitEdit();
     }
@@ -128,7 +128,7 @@ const CreateRecordsForm = ({
       </Pane>
       <ConfirmationModal
         id="cancel-editing-confirmation"
-        open={openModal}
+        open={isModalOpen}
         message={<FormattedMessage id="stripes-form.unsavedChanges" />}
         heading={<FormattedMessage id="stripes-form.areYouSure" />}
         onConfirm={closeModal}
