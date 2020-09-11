@@ -31,6 +31,25 @@ const DataProvider = ({
       }
     }
 
+    const { instanceStatuses, settings } = loadedData;
+
+    const value = settings[0]?.value || '';
+    let config;
+
+    try {
+      const { instanceStatusCode, defaultDiscoverySuppress } = JSON.parse(value);
+
+      const discoverySuppress = JSON.parse(defaultDiscoverySuppress);
+      const statusId = (instanceStatuses.find(status => status.code === instanceStatusCode) || {}).id || '';
+
+      config = {
+        discoverySuppress,
+        statusId,
+      };
+    } catch (error) {
+      config = {};
+    }
+    loadedData.settings = config;
     loadedData.identifierTypesByName = keyBy(loadedData.identifierTypes, 'name');
 
     return loadedData;

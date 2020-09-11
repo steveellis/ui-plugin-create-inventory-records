@@ -43,34 +43,20 @@ const CreateRecordsWrapper = ({
     createItemRecord,
   },
 }) => {
-  const { identifierTypesByName, instanceStatuses, settings } = useData();
+  const {
+    identifierTypesByName,
+    settings,
+  } = useData();
   const callout = useCallout();
   const isLoading = useIsLoading();
 
-  const value = settings[0]?.value || '';
-
-  let config;
-
-  try {
-    const { instanceStatusCode, defaultDiscoverySuppress } = JSON.parse(value);
-
-    // Since the Checkbox implicitly casts any non-empty string to true,
-    // had to explicitly convert the 'false'/'true' string to the boolean.
-    const discoverySuppress = JSON.parse(defaultDiscoverySuppress);
-    const statusId = (instanceStatuses.find(status => status.code === instanceStatusCode) || {}).id || '';
-
-    const instance = {
+  const config = {
+    ...initialValues,
+    instance: {
       ...initialValues.instance,
-      discoverySuppress,
-      statusId,
-    };
-    config = {
-      ...initialValues,
-      instance,
-    };
-  } catch (e) {
-    config = initialValues;
-  }
+      ...settings,
+    },
+  };
 
   const handleSubmit = useCallback(async (formData) => {
     const {
