@@ -64,6 +64,11 @@ DataProvider.manifest = Object.freeze({
     records: 'instanceStatuses',
     path: 'instance-statuses?limit=1000&query=cql.allRecords=1 sortby name',
   },
+  settings: {
+    type: 'okapi',
+    records: 'configs',
+    path: 'configurations/entries?query=(module==FAST_ADD and configName==fastAddSettings)',
+  },
   identifierTypes: {
     type: 'okapi',
     records: 'identifierTypes',
