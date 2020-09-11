@@ -43,9 +43,20 @@ const CreateRecordsWrapper = ({
     createItemRecord,
   },
 }) => {
-  const { identifierTypesByName } = useData();
+  const {
+    identifierTypesByName,
+    settings,
+  } = useData();
   const callout = useCallout();
   const isLoading = useIsLoading();
+
+  const config = {
+    ...initialValues,
+    instance: {
+      ...initialValues.instance,
+      ...settings,
+    },
+  };
 
   const handleSubmit = useCallback(async (formData) => {
     const {
@@ -91,7 +102,7 @@ const CreateRecordsWrapper = ({
         <CreateRecordsForm
           onSubmit={handleSubmit}
           onClose={onClose}
-          initialValues={initialValues}
+          initialValues={config}
         />
       </Layer>
     </Paneset>
