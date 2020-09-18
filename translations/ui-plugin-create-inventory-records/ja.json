@@ -50,7 +50,7 @@
     "addCirculationNote": "Add check in / check out note",
     "circulationNotes.noteType": "Note type",
     "circulationNotes.name": "Note",
-    "circulationNotes.staffOnly": "Staff only",
+    "circulationNotes.staffOnly": "スタッフのみ",
     "circulationNotes.checkInNote": "Check in note",
     "circulationNotes.checkOutNote": "Check out note",
     "selectInstanceStatus": "Select instance status"

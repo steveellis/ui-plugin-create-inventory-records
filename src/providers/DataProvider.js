@@ -25,12 +25,27 @@ const DataProvider = ({
   const data = useMemo(() => {
     const loadedData = {};
 
-    for (const key in manifest) {
-      if (manifest[key].type === 'okapi') {
-        loadedData[key] = resources?.[key]?.records ?? [];
-      }
-    }
+    Object.keys(manifest).forEach(key => {
+      loadedData[key] = resources?.[key]?.records ?? [];
+    });
 
+    const { instanceStatuses, configs } = loadedData;
+    const value = configs[0]?.value || '';
+    let config;
+
+    try {
+      const { instanceStatusCode, defaultDiscoverySuppress } = JSON.parse(value);
+      const discoverySuppress = JSON.parse(defaultDiscoverySuppress);
+      const statusId = (instanceStatuses.find(status => status.code === instanceStatusCode) || {}).id || '';
+
+      config = {
+        discoverySuppress,
+        statusId,
+      };
+    } catch (error) {
+      config = {};
+    }
+    loadedData.settings = config;
     loadedData.identifierTypesByName = keyBy(loadedData.identifierTypes, 'name');
 
     return loadedData;
@@ -63,6 +78,11 @@ DataProvider.manifest = Object.freeze({
     type: 'okapi',
     records: 'instanceStatuses',
     path: 'instance-statuses?limit=1000&query=cql.allRecords=1 sortby name',
+  },
+  configs: {
+    type: 'okapi',
+    records: 'configs',
+    path: 'configurations/entries?query=(module==FAST_ADD and configName==fastAddSettings)',
   },
   identifierTypes: {
     type: 'okapi',

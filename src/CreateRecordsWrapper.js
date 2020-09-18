@@ -1,6 +1,9 @@
 import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
-import { FormattedMessage } from 'react-intl';
+import {
+  FormattedMessage,
+  useIntl,
+} from 'react-intl';
 
 import { stripesConnect } from '@folio/stripes/core';
 import {
@@ -43,9 +46,21 @@ const CreateRecordsWrapper = ({
     createItemRecord,
   },
 }) => {
-  const { identifierTypesByName } = useData();
+  const {
+    identifierTypesByName,
+    settings,
+  } = useData();
   const callout = useCallout();
   const isLoading = useIsLoading();
+  const intl = useIntl();
+
+  const config = {
+    ...initialValues,
+    instance: {
+      ...initialValues.instance,
+      ...settings,
+    },
+  };
 
   const handleSubmit = useCallback(async (formData) => {
     const {
@@ -86,12 +101,12 @@ const CreateRecordsWrapper = ({
       <Layer
         isOpen
         inRootSet
-        contentLabel={<FormattedMessage id="ui-plugin-create-inventory-records.fastAddLabel" />}
+        contentLabel={intl.formatMessage({ id: 'ui-plugin-create-inventory-records.fastAddLabel' })}
       >
         <CreateRecordsForm
           onSubmit={handleSubmit}
           onClose={onClose}
-          initialValues={initialValues}
+          initialValues={config}
         />
       </Layer>
     </Paneset>
