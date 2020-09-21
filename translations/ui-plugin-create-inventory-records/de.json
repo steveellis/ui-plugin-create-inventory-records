@@ -47,11 +47,12 @@
     "electronicAccess.materialsSpecification": "Materials specified",
     "electronicAccess.publicNote": "URL public note",
     "circulationNotes": "Item notes",
-    "addCirculationNote": "Add check in / check out note",
+    "addCirculationNote": "Ausleih-/Rückgabebeleg hinzufügen",
     "circulationNotes.noteType": "Note type",
     "circulationNotes.name": "Note",
     "circulationNotes.staffOnly": "Staff only",
-    "circulationNotes.checkInNote": "Check in note",
+    "circulationNotes.checkInNote": "Rückgabebeleg",
     "circulationNotes.checkOutNote": "Check out note",
-    "selectInstanceStatus": "Select instance status"
+    "selectInstanceStatus": "Select instance status",
+    "permission.create": "Fast add: Create"
 }
