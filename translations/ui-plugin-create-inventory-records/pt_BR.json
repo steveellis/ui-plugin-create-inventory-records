@@ -53,5 +53,6 @@
     "circulationNotes.staffOnly": "Somente pessoal autorizado",
     "circulationNotes.checkInNote": "Nota de devolução",
     "circulationNotes.checkOutNote": "Nota de empréstimo",
-    "selectInstanceStatus": "Selecione o status da instância"
+    "selectInstanceStatus": "Selecione o status da instância",
+    "permission.create": "Fast add: Create"
 }

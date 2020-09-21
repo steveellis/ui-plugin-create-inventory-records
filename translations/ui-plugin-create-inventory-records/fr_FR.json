@@ -53,5 +53,6 @@
     "circulationNotes.staffOnly": "Pour le personnel uniquement",
     "circulationNotes.checkInNote": "Note de retour",
     "circulationNotes.checkOutNote": "Note d'emprunt",
-    "selectInstanceStatus": "Sélectionnez le statut de l'instance"
+    "selectInstanceStatus": "Sélectionnez le statut de l'instance",
+    "permission.create": "Fast add: Create"
 }
