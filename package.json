@@ -56,6 +56,7 @@
       },
       {
         "permissionName": "ui-plugin-create-inventory-records.create",
+        "displayName": "Fast add: Create",
         "subPermissions": [
           "module.inventory.enabled",
           "inventory.instances.item.post",
