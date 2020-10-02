@@ -50,6 +50,7 @@ const CirculationNoteFields = () => {
               label={<FormattedMessage id="ui-plugin-create-inventory-records.circulationNotes.name" />}
               name={`item.circulationNotes[${index}].note`}
               component={TextField}
+              required
             />
           </Col>
           <Col sm={4}>
