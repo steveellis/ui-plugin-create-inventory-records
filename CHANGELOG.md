@@ -2,6 +2,7 @@
 
 ## 1.0.0 (IN PROGRESS)
 
+* Removed permission allowing access to inventory.  Addresses UIPCIR-12.
 * Adding permissions to create holdings and item records.  Partially addresses UIPCIR-6
 * Create instance via "fast add" form. Fixes UIPCIR-1.
 * Create holdings record via "fast add" form. Refs UIPCIR-2.

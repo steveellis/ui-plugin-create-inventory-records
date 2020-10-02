@@ -58,12 +58,10 @@
         "permissionName": "ui-plugin-create-inventory-records.create",
         "displayName": "Fast add: Create",
         "subPermissions": [
-          "module.inventory.enabled",
           "inventory.instances.item.post",
           "inventory-storage.instances.item.post",
           "inventory.items.item.post",
           "inventory-storage.holdings.item.post",
-          "ui-inventory.holdings.create",
           "configuration.entries.collection.get",
           "inventory.config.instances.blocked-fields.get",
           "inventory.instances.collection.get",
