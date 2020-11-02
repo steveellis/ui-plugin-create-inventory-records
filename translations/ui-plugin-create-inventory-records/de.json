@@ -1,6 +1,6 @@
 {
     "meta.title": "Create inventory records (plugin)",
-    "fastAddLabel": "New fast add record",
+    "fastAddLabel": "Neue Kurzaufnahme",
     "instanceRecord": "Instance",
     "discoverySuppress": "Suppress from discovery",
     "instanceStatusTerm": "Instance status term",
@@ -54,5 +54,5 @@
     "circulationNotes.checkInNote": "Rückgabebeleg",
     "circulationNotes.checkOutNote": "Check out note",
     "selectInstanceStatus": "Select instance status",
-    "permission.create": "Fast add: Create"
+    "permission.create": "Kurzaufnahme: Erstellen"
 }
