@@ -1,8 +1,8 @@
 {
     "meta.title": "Create inventory records (plugin)",
-    "fastAddLabel": "New fast add record",
+    "fastAddLabel": "新規クイックレコード追加",
     "instanceRecord": "インスタンス",
-    "discoverySuppress": "Suppress from discovery",
+    "discoverySuppress": "ディスカバリーから除外する",
     "instanceStatusTerm": "Instance status term",
     "instanceStatusTerm.uncataloged": "Uncataloged (UC: uc)",
     "resourceTitle": "リソースタイトル",
