@@ -1,6 +1,6 @@
 {
     "meta.title": "Create inventory records (plugin)",
-    "fastAddLabel": "New fast add record",
+    "fastAddLabel": "Aggiunta rapida nuovo record",
     "instanceRecord": "Istanza",
     "discoverySuppress": "Suppress from discovery",
     "instanceStatusTerm": "Status istanza",
