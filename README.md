@@ -22,6 +22,7 @@ The following props can be passed to the `Pluggable` component. They will be pas
 | `buttonVisible` | boolean | When true, this plugin will render its own trigger that opens the modal |
 | `onClose` | Object: `{ instanceRecord, holdingsRecord, itemRecord }` | Function called upon closing the modal. If the close is the result of a successful record creation, then an object will be passed that contains info about the created records. |
 | `open` | boolean | When true, this plugin will render the record-creation modal. |
+| `renderTrigger` | Function: `({ id, onClick }) => <YourButton />` | A render-function that is passed a props object and returns JSX. Used to customize the rendering of a trigger to open the record-creation modal. |
 
 ## Additional information
 

@@ -3,6 +3,8 @@
 ## 2.0.0 (IN PROGRESS)
 * Update permission for because of renaming of instance-bulk endpoint. Refs UIIN-1368.
 * Updated `onClose` prop to receive arg containing instance, holdings, and item record data. Refs UICR-91.
+* Wrapped rendering in an `IfPermission` check.
+* Added `renderTrigger` prop to customize trigger rendering within the `IfPermission` check.
 
 ## [1.0.0](https://github.com/folio-org/ui-plugin-create-inventory-records/tree/v1.0.0) (2020-10-13)
 
