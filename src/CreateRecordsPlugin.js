@@ -14,7 +14,6 @@ import CreateRecordsWrapper from './CreateRecordsWrapper';
 
 const CreateRecordsPlugin = ({
   buttonStyle,
-  buttonVisible,
   open,
   onOpen,
   onClose,
@@ -50,7 +49,6 @@ const CreateRecordsPlugin = ({
     <IfPermission perm="ui-plugin-create-inventory-records.create">
       {
         !isModalOpen &&
-          (buttonVisible || renderTrigger) && // if either are true, the plugin is responsible for rendering
           (renderTrigger ? renderTrigger(triggerProps) : (
             <Button
               buttonStyle={buttonStyle}
@@ -71,13 +69,11 @@ const CreateRecordsPlugin = ({
 };
 
 CreateRecordsPlugin.defaultProps = {
-  buttonVisible: true,
   open: false,
 };
 
 CreateRecordsPlugin.propTypes = {
   buttonStyle: PropTypes.string,
-  buttonVisible: PropTypes.bool,
   open: PropTypes.bool,
   onOpen: PropTypes.func,
   onClose: PropTypes.func,
