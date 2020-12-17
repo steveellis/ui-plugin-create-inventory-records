@@ -6,6 +6,8 @@ import {
   fillable,
   is,
   isPresent,
+  text,
+  attribute,
 } from '@bigtest/interactor';
 
 import CalloutInteractor from '@folio/stripes-components/lib/Callout/tests/interactor';
@@ -63,6 +65,8 @@ import CalloutInteractor from '@folio/stripes-components/lib/Callout/tests/inter
   button = scoped('[data-test-add-inventory-records]', {
     click: clickable(),
     isFocused: is(':focus'),
+    label: text(),
+    id: attribute('id'),
   });
 
   form = new FormInteractor('[data-test-create-records-form]');
