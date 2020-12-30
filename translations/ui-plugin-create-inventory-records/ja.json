@@ -1,6 +1,6 @@
 {
     "meta.title": "Create inventory records (plugin)",
-    "fastAddLabel": "新規クイックレコード追加",
+    "fastAddLabel": "新規ファスト追加レコード",
     "instanceRecord": "インスタンス",
     "discoverySuppress": "ディスカバリーから除外する",
     "instanceStatusTerm": "Instance status term",
@@ -30,7 +30,7 @@
     "selectLocation": "Select location",
     "callNumberType": "Call number type",
     "callNumberPrefix": "Call number prefix",
-    "callNumber": "Call number",
+    "callNumber": "請求記号",
     "callNumberSuffix": "Call number suffix",
     "selectType": "Select type",
     "itemRecord": "Item",
