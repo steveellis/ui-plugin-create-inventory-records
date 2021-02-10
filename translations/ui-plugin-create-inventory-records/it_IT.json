@@ -2,7 +2,7 @@
     "meta.title": "Create inventory records (plugin)",
     "fastAddLabel": "Aggiunta rapida nuovo record",
     "instanceRecord": "Istanza",
-    "discoverySuppress": "Suppress from discovery",
+    "discoverySuppress": "Non mostrare nel discovery",
     "instanceStatusTerm": "Status istanza",
     "instanceStatusTerm.uncataloged": "Non catalogato (UC: uc)",
     "resourceTitle": "Titolo risorsa",
