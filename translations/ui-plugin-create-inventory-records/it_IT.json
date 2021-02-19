@@ -15,7 +15,7 @@
     "saveAndClose": "Salva e chiudi",
     "onSave.success": "Inventory records have been created successfully",
     "onSave.error": "Saving inventory records failed",
-    "addContributor": "Add contributor",
+    "addContributor": "Aggiungi contributore",
     "contributors": "Contributors",
     "contributors.name": "Nome",
     "contributors.nameType": "Tipologia nome",
