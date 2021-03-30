@@ -16,7 +16,7 @@
     "onSave.success": "Inventory records have been created successfully",
     "onSave.error": "Saving inventory records failed",
     "addContributor": "Aggiungi contributore",
-    "contributors": "Contributors",
+    "contributors": "Contributori",
     "contributors.name": "Nome",
     "contributors.nameType": "Tipologia nome",
     "contributors.primary": "Principale",
