@@ -1,6 +1,6 @@
 {
   "name": "@folio/plugin-create-inventory-records",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Create inventory records for Stripes",
   "repository": "folio-org/ui-plugin-create-inventory-records",
   "publishConfig": {
@@ -47,7 +47,7 @@
       "holdings-note-types": "1.0",
       "users": "15.0",
       "location-units": "2.0",
-      "circulation": "9.0"
+      "circulation": "9.0 10.0"
     },
     "permissionSets": [
       {
