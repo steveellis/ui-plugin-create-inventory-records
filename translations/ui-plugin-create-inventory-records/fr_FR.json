@@ -1,5 +1,5 @@
 {
-    "meta.title": "Créer des enregistrements d'inventaire (plugin)",
+    "meta.title": "Créer des enregistrements d'inventaire / de catalogue (plugin)",
     "fastAddLabel": "Nouvel ajout rapide",
     "instanceRecord": "Instance",
     "discoverySuppress": "Supprimer de la *recherche*",
@@ -13,7 +13,7 @@
     "resourceType": "Type de ressource",
     "cancel": "Annuler",
     "saveAndClose": "Sauvegarder et fermer",
-    "onSave.success": "Les enregistrements d'inventaire ont été créés avec succès",
+    "onSave.success": "Les enregistrements d'inventaire / de catalogue ont été créés avec succès",
     "onSave.error": "Saving inventory records failed",
     "addContributor": "Ajouter un contributeur",
     "contributors": "Contributeurs",
@@ -33,7 +33,7 @@
     "callNumber": "Cote",
     "callNumberSuffix": "Suffixe de la cote",
     "selectType": "Sélectionner le type",
-    "itemRecord": "Article",
+    "itemRecord": "Exemplaire",
     "barcode": "Code-barres",
     "selectMaterialType": "Sélectionnez le type de matériel",
     "materialType": "Type de matériel",
@@ -46,7 +46,7 @@
     "electronicAccess.linkText": "Texte du lien",
     "electronicAccess.materialsSpecification": "Matériels spécifiés",
     "electronicAccess.publicNote": "Note publique sur l'URL",
-    "circulationNotes": "Notes  sur l'article",
+    "circulationNotes": "Notes  sur l'exemplaire",
     "addCirculationNote": "Ajouter une note pour le retour / l'emprunt",
     "circulationNotes.noteType": "Type de note",
     "circulationNotes.name": "Note",
@@ -54,5 +54,5 @@
     "circulationNotes.checkInNote": "Note de retour",
     "circulationNotes.checkOutNote": "Note d'emprunt",
     "selectInstanceStatus": "Sélectionnez le statut de l'instance",
-    "permission.create": "Fast add: Create"
+    "permission.create": "Ajout rapide: créer"
 }
