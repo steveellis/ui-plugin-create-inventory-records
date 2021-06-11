@@ -54,5 +54,6 @@
     "circulationNotes.checkInNote": "归还附注",
     "circulationNotes.checkOutNote": "借出附注",
     "selectInstanceStatus": "选择实例状态",
-    "permission.create": "快速添加：创建"
+    "permission.create": "快速添加：创建",
+    "barcodeTaken": "This barcode has already been taken"
 }

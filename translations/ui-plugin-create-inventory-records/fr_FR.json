@@ -54,5 +54,6 @@
     "circulationNotes.checkInNote": "Note de retour",
     "circulationNotes.checkOutNote": "Note d'emprunt",
     "selectInstanceStatus": "Sélectionnez le statut de l'instance",
-    "permission.create": "Ajout rapide: créer"
+    "permission.create": "Ajout rapide: créer",
+    "barcodeTaken": "Ce code-barres a déjà été pris"
 }
