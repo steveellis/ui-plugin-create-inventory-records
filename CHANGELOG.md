@@ -1,12 +1,15 @@
 # Change history for ui-plugin-create-inventory-records
 
-## 2.1.0 (IN PROGRESS)
+## [2.1.0](https://github.com/folio-org/ui-plugin-create-inventory-records/tree/v2.1.0) (2021-06-18)
+[Full Changelog](https://github.com/folio-org/ui-plugin-create-inventory-records/compare/v2.0.0...v2.1.0)
 
 * Also support `circulation` `10.0`. Refs UIPCIR-20.
 * Also support `circulation` `11.0`. Refs UIPCIR-21.
 * Add async barcode validation. Fixes UIPCIR-24.
 
 ## [2.0.0](https://github.com/folio-org/ui-plugin-create-inventory-records/tree/v2.0.0) (2021-03-11)
+[Full Changelog](https://github.com/folio-org/ui-plugin-create-inventory-records/compare/v1.0.0...v2.0.0)
+
 * Update permission for because of renaming of instance-bulk endpoint. Refs UIIN-1368.
 * Updated `onClose` prop to receive arg containing instance, holdings, and item record data. Refs UICR-91.
 * Wrapped rendering in an `IfPermission` check.
