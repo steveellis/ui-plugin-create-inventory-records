@@ -55,5 +55,5 @@
     "circulationNotes.checkOutNote": "Nota de empréstimo",
     "selectInstanceStatus": "Selecione o status da instância",
     "permission.create": "Registro rápido: Criar",
-    "barcodeTaken": "This barcode has already been taken"
+    "barcodeTaken": "Este código de barras já foi usado"
 }
